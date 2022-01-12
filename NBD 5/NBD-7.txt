@@ -1,0 +1,41 @@
+Zad 1.
+curl -i -XPUT -H "Content-Type: application/json" -d "{"Rodzaj": "napoje", "Nazwa": "Cola", "Cena": 2.65, "Zawarto??": 3.2}" http://127.0.0.1:8098/buckets/s24101/keys/colareturnbody=true
+
+curl -i -XPUT -H "Content-Type: application/json" -d "{"Rodzaj": "napoje", "Nazwa": "Pepsi", "Cena": 2.30, "Zawarto??": 1.0}" http://127.0.0.1:8098/buckets/s24101/keys/pepsireturnbody=true
+
+curl -i -XPUT -H "Content-Type: application/json" -d "{"Rodzaj": "napoje", "Nazwa": "Fanta", "Cena": 5.45, "Zawarto??": 3.0}" http://127.0.0.1:8098/buckets/s24101/keys/fantareturnbody=true
+
+curl -i -XPUT -H "Content-Type: application/json" -d "{"Rodzaj": "napoje", "Nazwa": "Sprite", "Cena": 9.99, "Zawarto??": 1.5}" http://127.0.0.1:8098/buckets/s24101/keys/spritereturnbody=true
+
+Zad 2.
+curl -i -X GET   http://127.0.0.1:8098/buckets/s24101/keys/fantareturnbody=true
+
+Zad3.
+curl -i -XPUT -H "Content-Type: application/json" -d "{"Rodzaj": "napoje", "Nazwa": "Sprite", "Cena": 9.99, "Zawarto??": 1.5, "Zakupione": "True"}" http://127.0.0.1:8098/buckets/s24101/keys/spritereturnbody=true
+
+Zad 4.
+curl -i -XPUT -H "Content-Type: application/json" -d "{"Rodzaj": "napoje", "Nazwa": "Sprite", "Cena": 9.99, "Zawarto??": 1.5}" http://127.0.0.1:8098/buckets/s24101/keys/spritereturnbody=true 
+
+Zad 5.
+curl -i -XPUT -H "Content-Type: application/json" -d "{"Rodzaj": "napoje", "Nazwa": "Sprite", "Cena": 9.99, "Zawarto??": 1.5}" http://127.0.0.1:8098/buckets/s24101/keys/spritereturnbody=true 
+
+Zad 6.
+curl -i -X DELETE   http://127.0.0.1:8098/buckets/s24101/keys/spritereturnbody=true
+
+Zad 7.
+curl -i -X GET   http://127.0.0.1:8098/buckets/s24101/keys/spritereturnbody=true
+
+Zad 8. 
+
+curl -i -XPOST -H "Content-Type: application/json" -d "{"Rodzaj": "napoje", "Nazwa": "Woda Gazowana"}" http://127.0.0.1:8098/buckets/s24101/keys
+
+Zad 9.
+
+curl -i -X GET   http://127.0.0.1:8098/buckets/s24101/keys/RI4rOosfzwD2UKmzqqNPRIoJUW8
+
+Zad 10.
+
+curl -i -X DELETE   http://127.0.0.1:8098/buckets/s24101/keys/RI4rOosfzwD2UKmzqqNPRIoJUW8
+
+
+
